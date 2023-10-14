@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* core tags */
+.main{
+    height: 50%;
+    width: 35%;
+    display: flex;
+    border-radius: 2.5%;
+    background-color: hsl(0, 0%, 100%);
+}
+.left{
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+}
+.left img{
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 2.5%;
+}
+.right{
+    height: 100%;
+    width: 45%;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+/* rest of the tags */
+.title{
+    font-size: 0.65em;
+    color: hsl(228, 12%, 48%);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* sub heading */
+.second  {
+    width: 70%;
+    font-size: 1.5em;
+    font-family: 'Fraunces', serif;
+}
+
+/* paragraph */
+.para{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+button img{
+    padding: 0 2%;
+}
+/* Main Price */
+.price{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color:  hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+/* Striked price */
+strike{
+    color: hsl(228, 12%, 48%);
+    padding-left: 10%;
+    font-family: 'Fraunces', serif;
+    font-size: 50%;
+}
+
+/* btn */
+button{
+    border-radius: 0.5em;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  hsl(158, 36%, 37%);
+    border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 80%;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        border-radius: 2.5%;       
+        background: url("images/image-product-mobile.jpg")no-repeat ;
+        background-size:contain ;
+    }
+  .left img {
+    height: 0%;
+    max-width: 100%;
+ }  
+ .right{
+    width: 80%;
+ } 
+
+ .second{
+    width: 100%;
+ }
+}
